@@ -83,8 +83,6 @@ USE nc_coffee;
 4. **Display Tables in the Database**:
 SHOW TABLES;
 
-mysql> show tables;
-
 | Tables_in_nc_coffee |
 |---------------------|
 | avengers            |
@@ -94,11 +92,19 @@ mysql> show tables;
 6. **View Contents of `coffee_table`**:
 SELECT * FROM coffee_table;
 
+| id | name          | region   | roast   |
+|----|---------------|----------|---------|
+| 1  | default route | ethopia  | light   |
+| 2  | docker run    | mexico   | medium  |
+| 3  | helpdesk      | honduras | medium  |
+| 4  | on-call       | peru     | dark    |
+| 5  | ifconfig      | tanzania | blonde  |
+| 6  | traceroute    | bali     | med-dark|
+
+
 or
 
 SELECT * FROM avengers;
-
-mysql> SELECT * FROM avengers;
 
 | id | first_name | last_name | origin   | age  | alias             | beard |
 |----|------------|-----------|----------|------|-------------------|-------|
@@ -111,8 +117,6 @@ mysql> SELECT * FROM avengers;
 
 7. **Describe Table Structure**:
 DESCRIBE coffee_table;
-
-mysql> describe coffee_table;
 
 | Field  | Type         | Null | Key | Default | Extra |
 |--------|--------------|------|-----|---------|-------|
