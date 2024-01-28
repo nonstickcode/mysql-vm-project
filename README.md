@@ -36,7 +36,11 @@ Once imported, you can explore the database using MySQL commands. See the `dev-r
 
 This project is licensed under the [MIT License](LICENSE).
 
+
+
 ***
+
+
 
 # Developer Guide for MySQL Coffee Database Project
 
