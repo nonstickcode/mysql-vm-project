@@ -4,7 +4,7 @@ This repository hosts a MySQL project that includes a database related to coffee
 
 ## Project Overview
 
-The project revolves around a MySQL database named `nc_coffee`, which contains 2 tables including `coffee_table` and 'avengers'. The 'coffee_table' table is structured to hold data about different types of coffee, characterized by attributes like region and roast.
+The project revolves around a MySQL database named `nc_coffee`, which contains 2 tables including `coffee_table` and `avengers`. The `coffee_table` table is structured to hold data about different types of coffee, characterized by attributes like region and roast.
 
 ## Getting Started
 
