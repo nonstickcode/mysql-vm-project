@@ -76,12 +76,12 @@ USE nc_coffee;
 SHOW TABLES;
 
 mysql> show tables;
-+---------------------+
+
 | Tables_in_nc_coffee |
-+---------------------+
+|---------------------|
 | avengers            |
 | coffee_table        |
-+---------------------+
+
 
 6. **View Contents of `coffee_table`**:
 SELECT * FROM coffee_table;
@@ -91,6 +91,7 @@ or
 SELECT * FROM avengers;
 
 mysql> SELECT * FROM avengers;
+
 | id | first_name | last_name | origin   | age  | alias             | beard |
 |----|------------|-----------|----------|------|-------------------|-------|
 | 1  | thor       | odinson   | asgard   | 1500 | strongest avenger | 1     |
@@ -104,14 +105,14 @@ mysql> SELECT * FROM avengers;
 DESCRIBE coffee_table;
 
 mysql> describe coffee_table;
-+--------+--------------+------+-----+---------+-------+
+
 | Field  | Type         | Null | Key | Default | Extra |
-+--------+--------------+------+-----+---------+-------+
+|--------|--------------|------|-----|---------|-------|
 | id     | int          | YES  |     | NULL    |       |
 | name   | varchar(255) | YES  |     | NULL    |       |
 | region | varchar(255) | YES  |     | NULL    |       |
 | roast  | varchar(255) | YES  |     | NULL    |       |
-+--------+--------------+------+-----+---------+-------+
+
 
 ## Exiting MySQL
 
