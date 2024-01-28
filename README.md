@@ -69,32 +69,50 @@ Once inside MySQL, perform the following operations:
 1. **Show All Databases**:
 SHOW DATABASES;
 
-go
-Copy code
-
 2. **Select the `nc_coffee` Database**:
 USE nc_coffee;
 
-markdown
-Copy code
-
-3. **Display Tables in the Database**:
+4. **Display Tables in the Database**:
 SHOW TABLES;
 
-go
-Copy code
+mysql> show tables;
++---------------------+
+| Tables_in_nc_coffee |
++---------------------+
+| avengers            |
+| coffee_table        |
++---------------------+
 
-4. **View Contents of `coffee_table`**:
+6. **View Contents of `coffee_table`**:
 SELECT * FROM coffee_table;
 
-markdown
-Copy code
+or
 
-5. **Describe Table Structure**:
+SELECT * FROM avengers;
+
+mysql> SELECT * FROM avengers;
++------+------------+-----------+----------+------+-------------------+-------+
+| id   | first_name | last_name | origin   | age  | alias             | beard |
++------+------------+-----------+----------+------+-------------------+-------+
+|    1 | thor       | odinson   | asgard   | 1500 | strongest avenger |     1 |
+|    2 | clint      | barton    | earth    |   35 | hawkeye           |  NULL |
+|    3 | tony       | stark     | earth    |   52 | iron man          |  NULL |
+|    4 | peter      | parker    | earth    |   17 | spiderman         |  NULL |
+|    5 | groot      | NULL      | planet x |   18 | tree              |     0 |
++------+------------+-----------+----------+------+-------------------+-------+
+
+7. **Describe Table Structure**:
 DESCRIBE coffee_table;
 
-bash
-Copy code
+mysql> describe coffee_table;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| id     | int          | YES  |     | NULL    |       |
+| name   | varchar(255) | YES  |     | NULL    |       |
+| region | varchar(255) | YES  |     | NULL    |       |
+| roast  | varchar(255) | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
 
 ## Exiting MySQL
 
