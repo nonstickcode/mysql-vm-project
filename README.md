@@ -17,26 +17,31 @@ To try out this project, you'll need to have MySQL installed on your system. You
 
 ### Clone the Repository
 
-```bash
 git clone https://github.com/nonstickcode/mysql-vm-project.git
 cd mysql-vm-project
-Importing the Database
+
+csharp
+Copy code
+
+### Importing the Database
+
 After cloning the repository, you can import the database into MySQL:
 
-bash
-Copy code
 mysql -u [username] -p < path/to/sql_file.sql
-Replace [username] with your MySQL username and path/to/sql_file.sql with the path to the SQL file in the cloned repository.
 
-Exploring the Database
+csharp
+Copy code
 
-Once imported, you can explore the database using MySQL commands. See the dev-readme.md file in this repository for detailed instructions on interacting with the database.
+Replace `[username]` with your MySQL username and `path/to/sql_file.sql` with the path to the SQL file in the cloned repository.
 
-Contributing
+## Exploring the Database
+
+Once imported, you can explore the database using MySQL commands. See the `dev-readme.md` file in this repository for detailed instructions on interacting with the database.
+
+## Contributing
 
 Contributions to this project are welcome. Please feel free to fork the repository and submit pull requests.
 
-License
+## License
 
-This project is licensed under the MIT License.
-
+This project is licensed under the [MIT License](LICENSE).
