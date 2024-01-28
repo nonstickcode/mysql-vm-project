@@ -1,10 +1,10 @@
 # MySQL Coffee Database Project
 
-This repository hosts a MySQL project that includes a database related to coffee. It's designed to demonstrate basic MySQL operations and database management within a Linux environment, specifically tailored for those interested in learning MySQL.
+This repository hosts a MySQL project that includes a database related to coffee. It's designed to demonstrate basic MySQL operations and database management within a Linux environment, specifically tailored for those interested in learning MySQL.  This project was created in a Linode VM Linux Ubuntu environment using command line.
 
 ## Project Overview
 
-The project revolves around a MySQL database named `nc_coffee`, which contains various tables including `coffee_table`. This table is structured to hold data about different types of coffee, characterized by attributes like region and roast.
+The project revolves around a MySQL database named `nc_coffee`, which contains 2 tables including `coffee_table` and 'avengers'. The 'coffee_table' table is structured to hold data about different types of coffee, characterized by attributes like region and roast.
 
 ## Getting Started
 
@@ -22,15 +22,19 @@ cd mysql-vm-project
 
 ### Importing the Database
 
-After cloning the repository, you can import the database into MySQL:
+After cloning the repository, you can import the database into MySQL using the `root` user. If you have set up another user with the necessary privileges, you can use that user instead.
 
-mysql -u [username] -p < path/to/sql_file.sql
+Run the following command in the terminal: mysql -u root -p < path/to/sql_file.sql
 
-Replace `[username]` with your MySQL username and `path/to/sql_file.sql` with the path to the SQL file in the cloned repository.
+- Replace `root` with your MySQL username if you are not using the `root` user.
+- Replace `path/to/sql_file.sql` with the actual path to the SQL file in the cloned repository.
+- After executing the command, you will be prompted to enter the password for the MySQL user.
+
+**Note**: Using the `root` user for MySQL operations is not recommended for production environments due to security risks. It's better to create a specific MySQL user with limited permissions for routine tasks.
 
 ## Exploring the Database
 
-Once imported, you can explore the database using MySQL commands. See the `dev-readme.md` file in this repository for detailed instructions on interacting with the database.
+Once imported, you can explore the database using MySQL commands. See the development section below in this file for detailed instructions on interacting with the database.
 
 ## License
 
