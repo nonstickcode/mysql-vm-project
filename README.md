@@ -20,17 +20,11 @@ To try out this project, you'll need to have MySQL installed on your system. You
 git clone https://github.com/nonstickcode/mysql-vm-project.git
 cd mysql-vm-project
 
-csharp
-Copy code
-
 ### Importing the Database
 
 After cloning the repository, you can import the database into MySQL:
 
 mysql -u [username] -p < path/to/sql_file.sql
-
-csharp
-Copy code
 
 Replace `[username]` with your MySQL username and `path/to/sql_file.sql` with the path to the SQL file in the cloned repository.
 
