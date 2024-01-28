@@ -32,10 +32,6 @@ Replace `[username]` with your MySQL username and `path/to/sql_file.sql` with th
 
 Once imported, you can explore the database using MySQL commands. See the `dev-readme.md` file in this repository for detailed instructions on interacting with the database.
 
-## Contributing
-
-Contributions to this project are welcome. Please feel free to fork the repository and submit pull requests.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
