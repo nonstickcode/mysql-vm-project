@@ -35,3 +35,63 @@ Once imported, you can explore the database using MySQL commands. See the `dev-r
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+***
+
+# Developer Guide for MySQL Coffee Database Project
+
+This guide is intended for developers or users who wish to interact directly with the MySQL database included in this project.
+
+## Accessing and Using the MySQL Database
+
+Follow these steps to access and use the `nc_coffee` database:
+
+### Connecting to MySQL
+
+1. **SSH into the VM**:
+   - Use the SSH command provided in your Linode server information to connect to your VM.
+
+2. **Check MySQL Server Status**:
+   - Run `sudo systemctl status mysql` to check the MySQL server status.
+   - Press `Q` to exit the status screen.
+
+3. **Access MySQL**:
+   - Use `sudo mysql` to enter the MySQL command line.
+
+### Basic MySQL Operations
+
+Once inside MySQL, perform the following operations:
+
+1. **Show All Databases**:
+SHOW DATABASES;
+
+go
+Copy code
+
+2. **Select the `nc_coffee` Database**:
+USE nc_coffee;
+
+markdown
+Copy code
+
+3. **Display Tables in the Database**:
+SHOW TABLES;
+
+go
+Copy code
+
+4. **View Contents of `coffee_table`**:
+SELECT * FROM coffee_table;
+
+markdown
+Copy code
+
+5. **Describe Table Structure**:
+DESCRIBE coffee_table;
+
+bash
+Copy code
+
+## Exiting MySQL
+
+To exit the MySQL interface, simply type `exit` or `\q`.
