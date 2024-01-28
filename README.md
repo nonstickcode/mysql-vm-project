@@ -1,6 +1,6 @@
 # MySQL Coffee Database Project
 
-This repository hosts a MySQL project that includes a database related to coffee. It's designed to demonstrate basic MySQL operations and database management within a Linux environment, specifically tailored for those interested in learning MySQL.  This project was created in a Linode VM Linux Ubuntu environment using command line.
+This repository hosts a MySQL project that includes a database related to coffee. Designed to demonstrate basic MySQL operations and database management, this project is particularly suited for those interested in learning MySQL within a Linux environment. It was created in a Linux Ubuntu environment hosted on a Linode VM, using command-line tools.
 
 ## Project Overview
 
