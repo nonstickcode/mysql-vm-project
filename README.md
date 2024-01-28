@@ -91,15 +91,14 @@ or
 SELECT * FROM avengers;
 
 mysql> SELECT * FROM avengers;
-+------+------------+-----------+----------+------+-------------------+-------+
-| id   | first_name | last_name | origin   | age  | alias             | beard |
-+------+------------+-----------+----------+------+-------------------+-------+
-|    1 | thor       | odinson   | asgard   | 1500 | strongest avenger |     1 |
-|    2 | clint      | barton    | earth    |   35 | hawkeye           |  NULL |
-|    3 | tony       | stark     | earth    |   52 | iron man          |  NULL |
-|    4 | peter      | parker    | earth    |   17 | spiderman         |  NULL |
-|    5 | groot      | NULL      | planet x |   18 | tree              |     0 |
-+------+------------+-----------+----------+------+-------------------+-------+
+| id | first_name | last_name | origin   | age  | alias             | beard |
+|----|------------|-----------|----------|------|-------------------|-------|
+| 1  | thor       | odinson   | asgard   | 1500 | strongest avenger | 1     |
+| 2  | clint      | barton    | earth    | 35   | hawkeye           | NULL  |
+| 3  | tony       | stark     | earth    | 52   | iron man          | NULL  |
+| 4  | peter      | parker    | earth    | 17   | spiderman         | NULL  |
+| 5  | groot      | NULL      | planet x | 18   | tree              | 0     |
+
 
 7. **Describe Table Structure**:
 DESCRIBE coffee_table;
