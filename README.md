@@ -8,7 +8,7 @@ The project revolves around a MySQL database named `nc_coffee`, which contains 3
 
 - **coffee_table**: This table is structured to hold data about different types of coffee, characterized by attributes like region and roast. It's designed to provide a simple demonstration of data storage and retrieval in a relational database.
 
-- **avengers**: This table contains a list of characters, presumably from the popular Avengers series. It includes details such as their first and last names, origin, age, alias, and an attribute indicating whether they have a beard. This table serves as a fun and engaging way to demonstrate data manipulation and querying in MySQL.
+- **avengers**: This table contains a list of characters. It includes details such as their first and last names, origin, age, alias, and an attribute indicating whether they have a beard. This table serves as a fun and engaging way to demonstrate data manipulation and querying in MySQL.
 
 - **orders**: This table is used to link the `avengers` and `coffee_table` tables together. It includes an `order_id` as the primary key and foreign keys `avengers_id` and `coffee_id` to establish relationships between orders, avengers, and coffee types. This table demonstrates the concept of relational databases.
 
